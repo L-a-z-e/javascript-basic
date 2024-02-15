@@ -108,7 +108,6 @@ console.log(user3);
 
 console.log(Object.getOwnPropertyDescriptors(user3)); // writable : false, enumerable : true, configurable : false
 
-
 const user4 = {
     name: 'laze',
     year: 2024,
