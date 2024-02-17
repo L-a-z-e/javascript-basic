@@ -1,0 +1,41 @@
+<!-- /**
+ * Execution Context
+ * 실행하려는 JS 코드와 코드를 실행할 때 필요한 정보를 담고있는 특수한 환경
+ * Global Context -> 최상위 Execution Context, 코드를 실행하면 무조건 생성되는 context로 웹에서 window 객체나 nodeJS에서의 global 객체를 생성하고 들고있는다.
+ * Function Context -> 함수가 실행될때마다 함수별로 실행되는 context
+ * 
+ * JavaScript 는 Single Thread 안에는
+ * Memory Heap 와
+ * Call Stack (Execution Context Stack) 이 있음
+ * 
+ * -- Execution Context Stack --
+ * Creation Phase ( Hoisting 이 일어나는 이유 Creation Phase가 먼저 실행 돼서
+ * Global Object 생성 window 또는 global 객체가 생성되고, 함수에서는 arguments 객체 생성
+ * this를 window 또는 global에 바인딩
+ * 변수와 함수를 Memory Heap에 배정하고 기본값을 undefined로 저장
+ * 
+ * Execution Phase
+ * 코드를 실행
+ * 필요하면 새로운 Execution Context를 생성
+ */ -->
+
+ <script>
+    function one(){
+        console.log('one started');
+        console.log('one finished');
+    }
+
+    function two(){
+        console.log('two started');
+        one();
+        console.log('two finished');
+    }
+
+    function three(){
+        console.log('three started');
+        two();
+        console.log('three finished');
+    }
+
+    three();
+ </script>
