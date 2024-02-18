@@ -23,4 +23,4 @@ console.log(name);
 
 // eamil is not defined
 // let과 const를 var 대신 쓰는 이유중하나 초기화를 하지 않은 경우 var 는 undefined를 let은 초기화부터 하라고 출력됨
-console.log(email);
+// console.log(email);

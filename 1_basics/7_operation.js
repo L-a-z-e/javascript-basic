@@ -155,6 +155,3 @@ console.log(nullVariable);
 let nullVariable2;
 nullVariable2 ??= 'laze'; // += -= 이랑 동일함
 console.log(nullVariable2);
-
-
-

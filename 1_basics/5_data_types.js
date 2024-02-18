@@ -28,6 +28,7 @@ console.log(typeof pi);
 const infinity = Infinity;
 const nInfinity = -Infinity;
 
+console.log('---typeof infinity---');
 console.log(typeof infinity);
 console.log(typeof nInfinity);
 
